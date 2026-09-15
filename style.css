@@ -354,3 +354,252 @@ footer ul ul p {
 footer {
     border-top: 1px solid #f4d7e3;
 }
+
+@media (max-width: 900px) {
+
+    header {
+        grid-template-columns: 150px 1fr;
+    }
+
+    .logo {
+        width: 120px;
+        margin: 15px;
+    }
+
+    .nombre_tienda {
+        font-size: 32px;
+        padding: 25px 25px 15px;
+    }
+
+    .contactos-barra {
+        padding: 10px 25px;
+    }
+
+    .contactos-barra a {
+        font-size: 12px;
+    }
+
+    .menu-principal {
+        padding: 0 25px;
+    }
+
+    .menu {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    #Inicio {
+        min-height: 320px;
+        padding: 60px 6%;
+    }
+
+    #Inicio h2 {
+        font-size: 40px;
+    }
+
+    #Inicio p {
+        font-size: 17px;
+    }
+
+    #Mujeres,
+    #Hombres,
+    #Perfumes {
+        grid-template-columns: repeat(2, 1fr);
+
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    article img {
+        height: 320px;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:
+            "logo copy"
+            "enlaces contacto"
+            "redes redes";
+
+        padding: 40px 6%;
+    }
+
+    footer > img {
+        width: 130px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* HEADER */
+
+    header {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "contactos"
+            "logo"
+            "nombre"
+            "menu";
+    }
+
+
+    /* BARRA SUPERIOR */
+
+    .contactos-barra {
+        flex-direction: column;
+
+        gap: 8px;
+
+        padding: 12px 15px;
+
+        text-align: center;
+    }
+
+    .contactos-barra a {
+        font-size: 12px;
+    }
+
+
+    /* LOGO */
+
+    .logo {
+        width: 110px;
+
+        margin: 20px auto 10px;
+    }
+
+
+    /* NOMBRE */
+
+    .nombre_tienda {
+        text-align: center;
+
+        font-size: 28px;
+
+        padding: 10px 15px 20px;
+    }
+
+
+    /* NAVEGACIÓN */
+
+    .menu-principal {
+        padding: 0 15px;
+    }
+
+    .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 5px 25px;
+    }
+
+    .menu a {
+        font-size: 14px;
+
+        padding: 12px 0;
+    }
+
+    main section {
+        padding: 40px 20px;
+    }
+
+    #Inicio {
+        min-height: 280px;
+
+        padding: 50px 20px;
+
+        text-align: center;
+    }
+
+    #Inicio h2 {
+        font-size: 32px;
+
+        text-align: center;
+    }
+
+    #Inicio p {
+        font-size: 16px;
+
+        line-height: 1.6;
+    }
+
+    main section > h2 {
+        font-size: 28px;
+
+        margin-bottom: 25px;
+    }
+
+    #Mujeres,
+    #Hombres,
+    #Perfumes {
+        grid-template-columns: 1fr;
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        gap: 25px;
+    }
+
+    article {
+        max-width: 400px;
+
+        width: 100%;
+
+        margin: auto;
+    }
+
+    article img {
+        height: 350px;
+    }
+
+    article h3 {
+        font-size: 19px;
+    }
+
+    article p {
+        font-size: 14px;
+    }
+
+    article p:last-child {
+        font-size: 17px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "logo"
+            "copy"
+            "enlaces"
+            "contacto"
+            "redes";
+
+        padding: 35px 20px;
+
+        text-align: center;
+    }
+
+    footer > img {
+        width: 120px;
+
+        justify-self: center;
+    }
+
+    footer > p:first-of-type {
+        text-align: center;
+    }
+
+    footer > ul {
+        padding-top: 35px;
+    }
+
+    footer h2 {
+        margin-top: 15px;
+    }
+}
