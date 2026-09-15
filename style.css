@@ -22,9 +22,6 @@ header {
     border-bottom: 1px solid #eeeeee;
 }
 
-
-/* Barra superior de contacto */
-
 .contactos-barra {
     grid-area: contactos;
 
@@ -49,9 +46,6 @@ header {
     text-decoration: underline;
 }
 
-
-/* Logo */
-
 .logo {
     grid-area: logo;
 
@@ -63,9 +57,6 @@ header {
 
     margin: 20px;
 }
-
-
-/* Nombre de la tienda */
 
 .nombre_tienda {
     grid-area: nombre;
@@ -81,9 +72,6 @@ header {
 
     border-bottom: 1px solid #eeeeee;
 }
-
-
-/* Navegación */
 
 .menu-principal {
     grid-area: menu;
@@ -102,9 +90,6 @@ header {
     padding: 0;
 }
 
-
-/* Enlaces */
-
 .menu a {
     display: block;
 
@@ -117,18 +102,142 @@ header {
     font-weight: 600;
 }
 
-
-/* Inicio seleccionado */
-
 .menu li:first-child a {
     color: #f23883;
 
     border-bottom: 3px solid #f23883;
 }
 
-
-/* Hover */
-
 .menu a:hover {
+    color: #f23883;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+main section {
+    padding: 60px 8%;
+}
+
+main section > h2 {
+    grid-column: 1 / -1;
+
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 36px;
+
+    color: #17324d;
+
+    margin-bottom: 35px;
+}
+
+#Inicio {
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 80px 8%;
+
+    background-color: #fff2f7;
+}
+
+#Inicio h2 {
+    text-align: left;
+
+    max-width: 600px;
+
+    font-size: 48px;
+
+    color: #17324d;
+
+    margin-bottom: 20px;
+}
+
+#Inicio p {
+    max-width: 600px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #52616b;
+}
+
+#Mujeres,
+#Hombres,
+#Perfumes {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+#Hombres {
+    background-color: #fafafa;
+    max-width: none;
+
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+article {
+    background-color: white;
+
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+article img {
+    display: block;
+
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+}
+
+article h3 {
+    padding: 18px 18px 8px;
+
+    font-size: 20px;
+
+    color: #17324d;
+}
+
+article p {
+    padding: 0 18px 12px;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    color: #657786;
+}
+
+article p:last-child {
+    padding-bottom: 20px;
+
+    font-size: 18px;
+    font-weight: bold;
+
     color: #f23883;
 }
