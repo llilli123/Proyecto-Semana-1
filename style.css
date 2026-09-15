@@ -241,3 +241,116 @@ article p:last-child {
 
     color: #f23883;
 }
+footer {
+    display: grid;
+
+    grid-template-columns: 220px 1fr 1fr 1fr;
+
+    grid-template-areas:
+        "logo enlaces contacto redes"
+        "copy enlaces contacto redes";
+
+    gap: 25px 40px;
+
+    padding: 50px 8% 25px;
+
+    background-color: #fff2f7;
+
+    color: #17324d;
+}
+
+footer > img {
+    grid-area: logo;
+
+    width: 160px;
+    height: auto;
+
+    align-self: start;
+}
+
+footer > p:first-of-type {
+    grid-area: copy;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: #657786;
+}
+
+footer h2 {
+    font-size: 18px;
+
+    margin-bottom: 15px;
+
+    color: #17324d;
+}
+
+footer h2:nth-of-type(1) {
+    grid-area: enlaces;
+}
+
+footer h2:nth-of-type(2) {
+    grid-area: contacto;
+}
+
+footer h2:nth-of-type(3) {
+    grid-area: redes;
+}
+
+footer > ul {
+    list-style: none;
+
+    padding: 35px 0 0;
+
+    margin: 0;
+}
+
+footer > ul:nth-of-type(1) {
+    grid-area: enlaces;
+}
+
+footer > ul:nth-of-type(2) {
+    grid-area: contacto;
+}
+
+footer > ul:nth-of-type(3) {
+    grid-area: redes;
+}
+
+footer li {
+    margin-bottom: 12px;
+}
+
+footer a {
+    color: #17324d;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #f23883;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer ul ul {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 10px 0 0;
+}
+
+footer ul ul p {
+    font-size: 14px;
+
+    color: #657786;
+}
+
+footer {
+    border-top: 1px solid #f4d7e3;
+}
