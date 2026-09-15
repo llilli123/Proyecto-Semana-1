@@ -10,34 +10,125 @@ body {
 
 header {
     display: grid;
+
     grid-template-columns: 200px 1fr;
+
     grid-template-areas:
         "contactos contactos"
         "logo nombre"
         "logo menu";
+
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
 }
+
+
+/* Barra superior de contacto */
 
 .contactos-barra {
     grid-area: contactos;
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
     background-color: #f23883;
+
     padding: 10px 40px;
+
+    font-style: normal;
 }
 
 .contactos-barra a {
     color: white;
     text-decoration: none;
+    font-size: 14px;
 }
+
+.contactos-barra a:hover {
+    text-decoration: underline;
+}
+
+
+/* Logo */
 
 .logo {
     grid-area: logo;
+
+    width: 150px;
+    height: auto;
+
+    justify-self: center;
+    align-self: center;
+
+    margin: 20px;
 }
+
+
+/* Nombre de la tienda */
 
 .nombre_tienda {
     grid-area: nombre;
+
+    padding: 30px 40px 20px;
+
+    font-family: Georgia, serif;
+    font-size: 42px;
+
+    color: #f23883;
+
+    align-self: end;
+
+    border-bottom: 1px solid #eeeeee;
 }
+
+
+/* Navegación */
 
 .menu-principal {
     grid-area: menu;
+
+    padding: 0 40px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+
+    list-style: none;
+
+    padding: 0;
+}
+
+
+/* Enlaces */
+
+.menu a {
+    display: block;
+
+    padding: 18px 0;
+
+    color: #17324d;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* Inicio seleccionado */
+
+.menu li:first-child a {
+    color: #f23883;
+
+    border-bottom: 3px solid #f23883;
+}
+
+
+/* Hover */
+
+.menu a:hover {
+    color: #f23883;
 }
