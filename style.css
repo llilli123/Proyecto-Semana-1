@@ -4,7 +4,35 @@
 }
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
     color: #17324d;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+        "contactos contactos"
+        "logo nombre"
+        "logo menu";
+}
+
+.contactos-barra {
+    grid-area: contactos;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f23883;
+    padding: 10px 40px;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.nombre_tienda {
+    grid-area: nombre;
+}
+
+.menu-principal {
+    grid-area: menu;
 }
